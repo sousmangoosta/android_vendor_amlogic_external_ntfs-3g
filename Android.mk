@@ -24,7 +24,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/include/fuse-lite
 
 LOCAL_CFLAGS := $(MY_CFLAG)
 
-LOCAL_MODULE := libfuse
+LOCAL_MODULE := libfuse-lite
 LOCAL_MODULE_TAGS := optional
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc libcutils liblog
 
@@ -105,7 +105,7 @@ LOCAL_CFLAGS := $(MY_CFLAG)
 LOCAL_MODULE := ntfs-3g
 LOCAL_MODULE_TAGS := optional
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc libcutils liblog
-LOCAL_STATIC_LIBRARIES := libfuse libntfs-3g
+LOCAL_STATIC_LIBRARIES := libfuse-lite libntfs-3g
 
 #ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 26 && echo OK),OK)
 #LOCAL_PROPRIETARY_MODULE := true
